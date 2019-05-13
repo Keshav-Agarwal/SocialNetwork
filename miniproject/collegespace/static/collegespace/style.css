@@ -1,0 +1,130 @@
+.login1{
+	padding-top: 100px;
+	padding-left: 100px;
+}
+.login2{
+	padding-top: 100px;
+	padding-right: 150px;
+}
+.login1 form{
+	padding-top: 20px;
+	line-height: 40px;
+}
+.login2 form{
+	padding-top: 20px;
+	line-height: 40px;
+}
+input[type="text"]:hover{
+	border:1px solid #006FC4;
+}
+input[type="submit"]{
+	background-color: #006FC4;
+	border: 1px solid #00508D;
+	font-size: 15px;
+	padding: 5px;
+	color:#ffffff;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	border-radius: 3px;
+}
+*{
+	margin:0px;
+	padding: 0px;
+
+}
+.header{
+	background-color: #00B9ED;
+	height:60px;
+	border-bottom: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+	width: 100%;
+}
+.header #wrapper{
+	margin-left: auto;
+	margin-right: auto;
+	width:100%;
+	padding-top: 0px;
+	padding-bottom: 0px;
+
+}
+.header .logo{
+	padding-top: 11px;
+
+}
+.header .logo h2{
+	font-family: all;
+	padding-left: 100px;
+	
+	height:38px;
+	font-weight: 50px;
+	font-size: 30px;
+
+	color: #ffffff;
+
+}
+.search_box{
+	background-image: ;
+	position:absolute;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	padding-left: 800px;
+}
+#menu{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 37px;
+	padding-top: 19px;
+	margin-right: 4%;
+}
+#menu a{
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 14px;
+	background-image: ;
+	padding-top: 19px;
+	padding-bottom: 22px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#menu a:hover{
+	
+background-color: #00B9ED;
+}
+.profileleftsidecontent{
+	width: 194px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+	padding-top: 5px;
+	height: 200px;
+}
+.profilePosts{
+	float: right;
+	width: 560px;
+	height: 414px;
+	background-color: #DCE5EE;
+	padding: 5px;
+}
+.postForm{
+	float:right;
+	width: 560px;
+	height: 80px;
+	background-color: #F3F6F9;
+	padding: 5px;
+
+}
+.textheader{
+	background-color: #F3F6F9;
+	width:190px;
+	height: 15px;
+	padding: 5px;
+	border-bottom: 1px solid #DCE5EE;
+	font-weight: 600;
+}
+.posts{
+	padding-left: 200px;
+	padding-top: 15px;
+	padding-right: 200px;
+}

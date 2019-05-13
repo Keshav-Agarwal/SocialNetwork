@@ -1,0 +1,32 @@
+{% extends 'collegespace/template.html' %}
+
+{% block body %}
+<div class ="login1" style="float:left;">
+            <h2>Already a Member? Login below ...</h2>
+            <form role="form" action="{% url 'collegespace:login_user' %}"  method="post">
+                {% csrf_token %}
+    
+    Username : <input id="id_username" name="username" type="text">
+    <br>
+    Password : <input id="id_password" name="password" type="password">
+    <br>
+   <input type="submit" name="reg" value=" Login In">
+</form>
+            </div>
+           <div class="login2" style="float: right; width: 240px;">
+            <h2>Sign up Below ...</h2>
+           <form action="{% url 'collegespace:register' %}" method="post">
+               {% csrf_token %}
+           <!--<input type="text" size="40" name="first_name"  class="auto-clear" title="First Name" placeholder="first name"><p />
+           <input type="text" size="40" name="last_name" class="auto-clear" title="Last Name" placeholder="last name"><p />
+           <input type="text" size="40" name="username" class="auto-clear" title="Username" placeholder="user name"><p />
+           <input type="text" size="40" name="email" class="auto-clear" title="Email" placeholder="email address"><p />
+           <input type="text" size="40" name="email2" class="auto-clear" title="Repeat Email" placeholder=" Repeat email"><p />
+           <input type="password" size="40" name="password" placeholder="new password"><p />
+           <input type="password" size="40" name="password2" placeholder="confirm password"><p />-->
+               {{ u_form.as_p }}
+           <input type="submit" name="reg" value="Sign Up!">
+           </form>
+           </div>
+
+{% endblock %}

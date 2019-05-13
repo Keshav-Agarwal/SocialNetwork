@@ -1,0 +1,12 @@
+<!-- It shows the search results -->
+
+{% extends 'collegespace/template.html' %}
+
+{% block body %}
+<br><br><br><br><br><br><br><br><br><br>
+        {% for person in results %}
+        <!-- Make a box arount the result and add space for name profile photo and addfriend button -->
+        <!-- this is result -->
+            <a href="{% url 'collegespace:profile' person.id %}"> {{ person.username }} -- {{ person.id }}</a><br/>
+        {% endfor %}
+{% endblock %}

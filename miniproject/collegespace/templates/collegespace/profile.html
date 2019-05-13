@@ -1,0 +1,7 @@
+{% extends 'collegespace/template.html' %}
+
+{% block body %}
+
+{{ user.username }} -- <a href="{% url 'collegespace:add_friend' user.id %}">Add Friend</a>
+
+{% endblock %}

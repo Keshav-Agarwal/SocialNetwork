@@ -1,0 +1,29 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'collegespace/style.css' %}" />
+
+
+
+<div class="header">
+	<div id="wrapper">
+		<div class="logo">
+			<h2>College Space</h2>
+		</div>
+		<div id="menu">
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<a href="#">Profile</a>
+			<a href="{% url 'collegespace:logout_user' %}">Logout</a>
+		</div>
+
+	</div>
+
+	<form method="GET" action="{% url 'collegespace:search' %}">
+		<input type="text" size="40" name="searched_str"  class="auto-clear" title="Search" placeholder="Search">&nbsp;<input type="submit" name="reg" value="Search"><br><br>
+	</form>
+</div>
+<br>
+<br>
+<a href="{% url 'collegespace:post_img' %}">Upload Photo</a>
+{% block body %}
+{% endblock %}

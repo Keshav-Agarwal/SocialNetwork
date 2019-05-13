@@ -1,0 +1,13 @@
+<!-- shows the friends of a person -->
+
+{% extends 'collegespace/template.html' %}
+
+{% block body %}<br>
+added<br><br>
+{% for frnd in frnd_list %}
+<!-- Edit this some -->
+{{ frnd.username }}
+
+{% endfor %}
+
+{% endblock %}
